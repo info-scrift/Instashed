@@ -1,0 +1,158 @@
+/* Saans TRIAL Font Family */
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url('/fonts/SaansTRIAL-Regular.woff2') format('woff2'),
+       url('/fonts/SaansTRIAL-Regular.woff') format('woff'),
+       url('/fonts/SaansTRIAL-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url('/fonts/SaansTRIAL-Medium.woff2') format('woff2'),
+       url('/fonts/SaansTRIAL-Medium.woff') format('woff'),
+       url('/fonts/SaansTRIAL-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url('/fonts/SaansTRIAL-SemiBold.woff2') format('woff2'),
+       url('/fonts/SaansTRIAL-SemiBold.woff') format('woff'),
+       url('/fonts/SaansTRIAL-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url('/fonts/SaansTRIAL-Bold.woff2') format('woff2'),
+       url('/fonts/SaansTRIAL-Bold.woff') format('woff'),
+       url('/fonts/SaansTRIAL-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Saans TRIAL';
+  src: url('/fonts/SaansTRIAL-Heavy.woff2') format('woff2'),
+       url('/fonts/SaansTRIAL-Heavy.woff') format('woff'),
+       url('/fonts/SaansTRIAL-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 207 90% 54%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 60 4.8% 95.9%;
+  --secondary-foreground: 24 9.8% 10%;
+  --accent: 60 4.8% 95.9%;
+  --accent-foreground: 24 9.8% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 20 14.3% 4.1%;
+  --radius: 0.5rem;
+  
+  /* INSTA-SHED Brand Colors */
+  --brand-orange: 14 100% 59%; /* #FF6B35 */
+  --brand-orange-hover: 14 82% 53%; /* #E55A2B */
+  --brand-teal: 183 100% 11%; /* #00373A */
+  --dark-gray: 217 19% 25%; /* #2D3748 */
+  --light-gray: 210 20% 98%; /* #F7FAFC */
+  --text-dark: 220 39% 11%; /* #1A202C */
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 207 90% 54%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply antialiased bg-background text-foreground;
+    font-family: 'Saans TRIAL', sans-serif;
+  }
+}
+
+@layer utilities {
+  .brand-orange {
+    color: hsl(var(--brand-orange));
+  }
+  .bg-brand-orange {
+    background-color: hsl(var(--brand-orange));
+  }
+  .hover\:bg-brand-orange-hover:hover {
+    background-color: hsl(var(--brand-orange-hover));
+  }
+  .hover\:text-brand-orange:hover {
+    color: hsl(var(--brand-orange));
+  }
+  .text-brand-teal {
+    color: hsl(var(--brand-teal));
+  }
+  .bg-brand-teal {
+    background-color: hsl(var(--brand-teal));
+  }
+  .border-brand-teal {
+    border-color: hsl(var(--brand-teal));
+  }
+  .focus\:ring-brand-teal:focus {
+    --tw-ring-color: hsl(var(--brand-teal));
+  }
+  .hover\:bg-brand-teal:hover {
+    background-color: hsl(var(--brand-teal));
+  }
+  .text-dark-gray {
+    color: hsl(var(--dark-gray));
+  }
+  .bg-light-gray {
+    background-color: hsl(var(--light-gray));
+  }
+  .text-text-dark {
+    color: hsl(var(--text-dark));
+  }
+}

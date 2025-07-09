@@ -2,12 +2,21 @@ import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 import cors from "cors";
+import path from "path";
+import dotenv from "dotenv";
+
+// Load environment variables
+dotenv.config();
 
 const app = express();
 
-// Configure CORS to allow requests from the client
+// Configure CORS based on environment
+const corsOrigins = process.env.NODE_ENV === 'production' 
+  ? (process.env.ALLOWED_ORIGINS?.split(',') || [process.env.CORS_ORIGIN || 'https://your-domain.com'])
+  : ['http://localhost:5173', 'http://localhost:5174'];
+
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:5174'],
+  origin: corsOrigins,
   credentials: true
 }));
 
@@ -62,12 +71,20 @@ app.use((req, res, next) => {
     await setupVite(app, server);
   } else {
     serveStatic(app);
+    
+    // Serve static files from the React build in production
+    app.use(express.static(path.join(process.cwd(), 'dist', 'public')));
+
+    // Handle React routing, return all requests to React app
+    app.get('*', (req, res) => {
+      res.sendFile(path.join(process.cwd(), 'dist', 'public', 'index.html'));
+    });
   }
 
   // Changed port from 5000 to 5001 to avoid conflicts
   // this serves both the API and the client.
   // It is the only port that is not firewalled.
-  const port = 5001;
+  const port = process.env.PORT || 5001;
   server.listen({
     port,
     host: "0.0.0.0"

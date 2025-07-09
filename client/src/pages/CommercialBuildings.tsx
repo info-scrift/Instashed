@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import ContactFormSection from "@/components/ContactFormSection";
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
-import heroImage4 from "../../../ServicespageSingle4/service4image1.png";
+import heroImage4 from "/ServicespageSingle4/service4image1.png";
 
 export default function CommercialBuildings() {
   return (

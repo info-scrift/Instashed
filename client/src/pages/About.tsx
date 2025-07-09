@@ -3,9 +3,9 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import HomePageFAQ from "@/components/HomePageFAQ";
 import ContactFormSection from "@/components/ContactFormSection";
-import heroImage3 from "../../../AboutUs/aboutusimage1.png";
-import heroImage4 from "../../../AboutUs/aboutusimage2.png";
-import aboutIcon1 from "../../../AboutUs/aboutusicon1.svg";
+import heroImage3 from "/AboutUs/aboutusimage1.png";
+import heroImage4 from "/AboutUs/aboutusimage2.png";
+import aboutIcon1 from "/AboutUs/aboutusicon1.svg";
 
 export default function About() {
   return (

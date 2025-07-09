@@ -6,12 +6,12 @@ import { Button } from "@/components/ui/button";
 import { ChevronDown, ChevronUp } from "lucide-react";
 // Down arrow (collapsed)
 // Up arrow (expanded)
-import heroImage from "../../../ServicesPageAll/servicesimage3.png";
-import icon6 from "../../../servicesallicon1.svg";
-import icon7 from "../../../servicesallicon2.svg";
-import heroImage1 from "../../../ServicesPageAll/servicesimage2.png";
-import heroImage2 from "../../../ServicesPageAll/servicesimage1.png";
-import heroImage3 from "../../../ServicesPageAll/servicesimage4.png";
+import heroImage from "/ServicesPageAll/servicesimage3.png";
+import icon6 from "/servicesallicon1.svg";
+import icon7 from "/servicesallicon2.svg";
+import heroImage1 from "/ServicesPageAll/servicesimage2.png";
+import heroImage2 from "/ServicesPageAll/servicesimage1.png";
+import heroImage3 from "/ServicesPageAll/servicesimage4.png";
 export default function Services() {
   const [expandedSections, setExpandedSections] = useState<number[]>([]);
 

@@ -2,15 +2,15 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactFormSection from "@/components/ContactFormSection";
 import { Button } from "@/components/ui/button";
-import galleryImage1 from "../../../Gallery/galleryimage1.png";
-import galleryImage2 from "../../../Gallery/galleryimage2.png";
-import galleryImage3 from "../../../Gallery/galleryimage3.png";
-import galleryImage4 from "../../../Gallery/galleryimage4.png";
-import galleryImage5 from "../../../Gallery/galleryimage5.png";
-import galleryImage6 from "../../../Gallery/galleryimage6.png";
-import galleryImage7 from "../../../Gallery/galleryimage7.png";
-import galleryImage8 from "../../../Gallery/galleryimage8.png";
-import galleryImage9 from "../../../Gallery/galleryimage9.png";
+import galleryImage1 from "/Gallery/galleryimage1.png";
+import galleryImage2 from "/Gallery/galleryimage2.png";
+import galleryImage3 from "/Gallery/galleryimage3.png";
+import galleryImage4 from "/Gallery/galleryimage4.png";
+import galleryImage5 from "/Gallery/galleryimage5.png";
+import galleryImage6 from "/Gallery/galleryimage6.png";
+import galleryImage7 from "/Gallery/galleryimage7.png";
+import galleryImage8 from "/Gallery/galleryimage8.png";
+import galleryImage9 from "/Gallery/galleryimage9.png";
 export default function Gallery() {
   const galleryImages = [
     {

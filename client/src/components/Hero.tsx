@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import svg1 from "../../../Subtract.svg";
+import svg1 from "/Subtract.svg";
 import { useState } from "react";
 
 export default function Hero() {

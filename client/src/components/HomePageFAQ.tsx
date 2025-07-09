@@ -1,6 +1,6 @@
 import { useState } from "react";
-import icon7 from "../../../Icon 6.svg"; // Down arrow (collapsed)
-import icon6 from "../../../reqicon2.svg"; // Up arrow (expanded)
+import icon7 from "/Icon 6.svg"; // Down arrow (collapsed)
+import icon6 from "/reqicon2.svg"; // Up arrow (expanded)
 
 export default function HomePageFAQ() {
   const [expandedFAQs, setExpandedFAQs] = useState<number[]>([]);

@@ -1,4 +1,4 @@
-import buildingImage from "../../../Image 17.png"; // ✅ Confirmed image path
+import buildingImage from "/Image 17.png"; // ✅ Confirmed image path
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export default function TestimonialsSection() {

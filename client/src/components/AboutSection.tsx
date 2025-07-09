@@ -1,5 +1,5 @@
-import heroImage6 from "../../../Image 13.png";
-import aboutIcon1 from "../../../AboutUs/aboutusicon1.svg";
+import heroImage6 from "/Image 13.png";
+import aboutIcon1 from "/AboutUs/aboutusicon1.svg";
 
 export default function AboutSection() {
   const values = [

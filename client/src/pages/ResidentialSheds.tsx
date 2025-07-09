@@ -3,8 +3,8 @@ import Footer from "@/components/Footer";
 import ContactFormSection from "@/components/ContactFormSection";
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
-import heroImage3 from "../../../ServicesPageSingle1/service1image1.png";
-import heroImage4 from "../../../ServicesPageSingle1/service1image2.png";
+import heroImage3 from "/ServicesPageSingle1/service1image1.png";
+import heroImage4 from "/ServicesPageSingle1/service1image2.png";
 export default function ResidentialSheds() {
   return (
     <div className="min-h-screen bg-white">

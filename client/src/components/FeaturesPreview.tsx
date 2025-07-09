@@ -1,9 +1,4 @@
 import { Shield, Zap, Settings, Home, Users } from "lucide-react";
-import logoSvg from "../../../icon1.svg";
-import icon2 from "../../../icon2.svg";
-import icon3 from "../../../icon3.svg";
-import icon4 from "../../../icon4.svg";
-import icon5 from "../../../icon5.svg";
 
 export default function FeaturesPreview() {
   return (
@@ -15,7 +10,7 @@ export default function FeaturesPreview() {
           <div className="bg-white p-6 border border-gray-200 shadow-sm min-h-[320px]">
             <div className="mb-4">
               <img
-                src={logoSvg}
+                src={"/icon1.svg"}
                 alt="Weather Resistant Icon"
                 className="w-12 h-12 mb-4"
               />
@@ -49,7 +44,7 @@ export default function FeaturesPreview() {
 
         {/* Bottom Section - 4 Equal Boxes */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
-          {[icon2, icon3, icon4, icon5].map((icon, i) => (
+          {["/icon2.svg", "/icon3.svg", "/icon4.svg", "/icon5.svg"].map((icon, i) => (
             <div
               key={i}
               className="bg-white p-6 border border-gray-200 shadow-sm min-h-[320px]"

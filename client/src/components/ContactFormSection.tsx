@@ -1,9 +1,9 @@
 import { useState } from "react";
-import icon7 from "../../../Icon 7.svg";
-import icon8 from "../../../Icon 8.svg";
-import icon9 from "../../../Icon 9.svg";
-import icon10 from "../../../Icon 10.svg";
-import icon11 from "../../../Icon 11.svg";
+import icon7 from "/Icon 7.svg";
+import icon8 from "/Icon 8.svg";
+import icon9 from "/Icon 9.svg";
+import icon10 from "/Icon 10.svg";
+import icon11 from "/Icon 11.svg";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";

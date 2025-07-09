@@ -32,7 +32,10 @@ const createTransporter = () => {
     auth: {
       user: process.env.GMAIL_USER,
       pass: process.env.GMAIL_APP_PASSWORD
-    }
+    },
+    tls: {
+    rejectUnauthorized: false // ✅ This is the missing fix
+  }    
   });
 };
 
@@ -86,18 +89,8 @@ ${data.message}
 
 export const sendFormEmail = async (emailData: EmailData): Promise<boolean> => {
   try {
-    // const transporter = createTransporter();
-    const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: process.env.GMAIL_USER,
-      // pass: process.env.GMAIL_APP_PASSWORD,
-      pass:'plhf tmpu iyrn edku'
-    },
-    tls: {
-    rejectUnauthorized: false // ✅ This is the missing fix
-  }    
-  });
+    const transporter = createTransporter();
+    
     const isQuote = emailData.formType === 'quote';
     const subject = isQuote 
       ? `New Quote Request from ${emailData.firstName} ${emailData.lastName}`
@@ -107,13 +100,10 @@ export const sendFormEmail = async (emailData: EmailData): Promise<boolean> => {
       ? formatQuoteData(emailData.formData)
       : formatContactData(emailData.formData);
 
-    // console.log('Sending email with app passowrd:', process.env.GMAIL_APP_PASSWORD);
-
     const mailOptions = {
-      // from: process.env.GMAIL_USER,
-      from:"info.scrift@gmail.com",
-      // to: 'instashedworks@gmail.com',
-         to: 'munirabbasi2001@gmail.com',
+      from: process.env.GMAIL_USER || 'noreply@instashed.com',
+      // to: process.env.GMAIL_USER || 'admin@instashed.com',
+      to: 'munirabbasi2001@gmail.com',
       subject: subject,
       text: emailBody,
       replyTo: emailData.email

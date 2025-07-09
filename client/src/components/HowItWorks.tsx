@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import heroImage from "../../../Image 2.png";
-import heroImage1 from "../../../Image 3.png";
-import heroImage2 from "../../../Image 4.png";
-import backgroundimg from "../../../howitsworkbg.png";
+import heroImage from "/Image 2.png";
+import heroImage1 from "/Image 3.png";
+import heroImage2 from "/Image 4.png";
+import backgroundimg from "/howitsworkbg.png";
 export default function HowItWorks() {
   return (
     <section

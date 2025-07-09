@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import instaShedLogo from "../../../intashedlogo.svg";
+import instaShedLogo from "/intashedlogo.svg";
 
 export default function Footer() {
   return (

@@ -2,7 +2,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactFormSection from "@/components/ContactFormSection";
 import { Button } from "@/components/ui/button";
-import heroImage5 from "../../../contactimage1.png";
 export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
@@ -52,7 +51,7 @@ export default function Contact() {
             {/* Right Column - Customer Service Image */}
             <div className="flex justify-center">
               <img
-                src={heroImage5}
+                src={"/contactimage1.png"}
                 alt="Friendly InstaShed customer service representative ready to help with your metal building project"
                 className="w-80 h-96 object-cover rounded-lg"
               />

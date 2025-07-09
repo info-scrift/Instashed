@@ -1,6 +1,6 @@
 import { useState } from "react";
-import icon6 from "../../../Icon 6.svg";
-import icon7 from "../../../Icon 7.svg";"
+import icon6 from "/Icon 6.svg";
+import icon7 from "/Icon 7.svg";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 export default function FAQSection() {

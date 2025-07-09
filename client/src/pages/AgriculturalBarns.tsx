@@ -3,8 +3,8 @@ import Footer from "@/components/Footer";
 import ContactFormSection from "@/components/ContactFormSection";
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
-import heroImage4 from "../../../ServicesPagesingle2/service2image1.png";
-import heroImage5 from "../../../ServicesPagesingle2/service2image2.png";
+import heroImage4 from "/ServicesPagesingle2/service2image1.png";
+import heroImage5 from "/ServicesPagesingle2/service2image2.png";
 
 export default function AgriculturalBarns() {
   return (

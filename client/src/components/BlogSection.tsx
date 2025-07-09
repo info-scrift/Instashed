@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import heroImage9 from "../../../Image 16.png";
 
 export default function BlogSection() {
   const blogPosts = [
@@ -9,7 +8,7 @@ export default function BlogSection() {
         "Discover why metal storage buildings are the smart choice for long-term durability and cost-effectiveness.",
       date: "March 15, 2024",
       category: "Storage Tips",
-      image: heroImage9,
+      image: "/Image 16.png",
     },
     {
       title: "How to Choose the Right Shed Size",
@@ -17,7 +16,7 @@ export default function BlogSection() {
         "A comprehensive guide to determining the perfect shed size for your storage needs and available space.",
       date: "March 10, 2024",
       category: "Planning Guide",
-      image: heroImage9,
+      image: "/Image 16.png",
     },
     {
       title: "Maintenance Tips for Metal Buildings",
@@ -25,7 +24,7 @@ export default function BlogSection() {
         "Keep your metal building in pristine condition with these essential maintenance practices and schedules.",
       date: "March 5, 2024",
       category: "Maintenance",
-      image: heroImage9,
+      image: "/Image 16.png",
     },
   ];
 

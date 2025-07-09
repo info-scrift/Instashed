@@ -2,7 +2,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import heroImage1 from "../../../RequestaQuote/reqaquoteimage1.png";
+import heroImage1 from "/RequestaQuote/reqaquoteimage1.png";
 import {
   Select,
   SelectContent,

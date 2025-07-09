@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, ChevronDown } from "lucide-react";
-import logoSvg from "../../../intashedlogo.svg";
+import logoSvg from "/intashedlogo.svg";
 
 export default function Header() {
   const [location] = useLocation();

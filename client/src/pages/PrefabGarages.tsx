@@ -3,8 +3,8 @@ import Footer from "@/components/Footer";
 import ContactFormSection from "@/components/ContactFormSection";
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
-import heroImage4 from "../../../Servicespagesingle3/service3image1.png";
-import heroImage5 from "../../../Servicespagesingle3/service3image2.png";
+import heroImage4 from "/Servicespagesingle3/service3image1.png";
+import heroImage5 from "/Servicespagesingle3/service3image2.png";
 export default function PrefabGarages() {
   return (
     <div className="min-h-screen bg-white">

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import testimonialImage from "../../../Image 17.png";
-import icon13 from "../../../Icon 13.svg"; // Right icon
-import icon12 from "../../../Icon 12.svg"; // Left icon
+import testimonialImage from "/Image 17.png";
+import icon13 from "/Icon 13.svg"; // Right icon
+import icon12 from "/Icon 12.svg"; // Left icon
 
 export default function ClientTestimonials() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);

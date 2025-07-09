@@ -90,7 +90,7 @@ export default function Quote() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/api/quote', {
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/quote`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -41,7 +41,7 @@ export default function ContactFormSection() {
     try {
       // Try to submit to the API endpoint
       try {
-        const response = await fetch('/api/contact', {
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/contact`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
